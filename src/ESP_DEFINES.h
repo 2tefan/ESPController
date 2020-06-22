@@ -1,0 +1,42 @@
+#define POTI_0 33
+#define POTI_1 32
+#define POTI_2 35
+#define POTI_3 34
+#define POTI_4 39
+#define LENGHT_POTIS 5
+
+#define BUTTON_0 23
+#define BUTTON_1 22
+#define BUTTON_2 21
+#define BUTTON_3 19
+#define BUTTON_4 18
+#define BUTTON_5 5
+#define BUTTON_6 17
+#define BUTTON_7 16
+#define BUTTON_8 4
+#define BUTTON_9 2
+#define BUTTON_10 15
+#define LENGHT_BUTTONS 11
+
+#define RGB0_RED 27
+#define RGB0_GREEN 26
+#define RGB0_BLUE 25
+
+#define RGB1_RED 13
+#define RGB1_GREEN 12
+#define RGB1_BLUE 14
+
+#define LEDC0_CHANNEL_RED 0
+#define LEDC0_CHANNEL_GREEN 1
+#define LEDC0_CHANNEL_BLUE 2
+
+#define LEDC1_CHANNEL_RED 3
+#define LEDC1_CHANNEL_GREEN 4
+#define LEDC1_CHANNEL_BLUE 5
+
+#define LEDC_CHANNEL_LENGHT 3
+#define LEDC_FREQ_HZ 12000
+#define LEDC_RESOLUTION_BITS 8
+
+const int potis[LENGHT_POTIS] = {POTI_0, POTI_1, POTI_2, POTI_3, POTI_4};
+const int buttons[LENGHT_BUTTONS] = {BUTTON_0, BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_7, BUTTON_8, BUTTON_9, BUTTON_10};
