@@ -3,7 +3,6 @@
 #include <WiFiClientSecure.h>
 #include <time.h>
 #include <PubSubClient.h>
-#include <AsyncMqttClient.h>
 #include <ArduinoJson.h>
 #include "secrets.h"
 #include "myTime.h"
