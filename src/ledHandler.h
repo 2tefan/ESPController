@@ -11,8 +11,6 @@ const int ledc0[LEDC_CHANNEL_LENGHT] = {LEDC0_CHANNEL_RED, LEDC0_CHANNEL_GREEN, 
 const int ledc1[LEDC_CHANNEL_LENGHT] = {LEDC1_CHANNEL_RED, LEDC1_CHANNEL_GREEN, LEDC1_CHANNEL_BLUE};
 const int *leds[] = {ledc0, ledc1};
 
-TaskHandle_t TaskLEDs;
-
 void set_LED_RGB(__UINT_LEAST8_TYPE__ led, __UINT_LEAST8_TYPE__ ledR, __UINT_LEAST8_TYPE__ ledG, __UINT_LEAST8_TYPE__ ledB)
 {
     //Serial.printf("%d-%d-%d\n", int(ledR), int(ledG), int(ledB));

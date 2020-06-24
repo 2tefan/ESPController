@@ -28,6 +28,7 @@ String queuedMQTT[15][2];
 unsigned long lastPress[LENGHT_BUTTONS];
 
 String identifier = "SSMC-" + String((unsigned long)(ESP.getEfuseMac()));
+time_t now;
 
 #define MQTT_SUB_TOPIC_LED_COLOR "bedroom/controller/color"
 #define MQTT_SUB_TOPIC_HA_STATUS "hass/status"
@@ -42,8 +43,6 @@ String identifier = "SSMC-" + String((unsigned long)(ESP.getEfuseMac()));
 #define MQTT_WILL_QOS 0
 #define MQTT_WILL_RETAIN true
 #define MQTT_WILL_MESSAGE INFO_OFFLINE
-
-time_t now;
 
 void setup_time()
 {
@@ -289,8 +288,6 @@ void IRAM_ATTR isr_10()
 {
   isr_r(10);
 }
-
-TaskHandle_t TaskA;
 
 void setup_pins()
 {
