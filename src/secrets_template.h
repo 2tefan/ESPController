@@ -33,3 +33,6 @@ const char *local_root_ca =
     "pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp\n"
     "pppppppppppppppppppppppppppppppppppppppppppppppppppp=placeholder\n"
     "-----END CERTIFICATE-----\n";
+
+const char *client_ca;
+const char *client_private_key;

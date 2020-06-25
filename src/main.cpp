@@ -209,6 +209,8 @@ void setup_mqtt()
   firstRun = true;
   Serial.println(identifier);
   net.setCACert(local_root_ca);
+  net.setCertificate(client_ca);
+  net.setPrivateKey(client_private_key);
   client.setServer(MQTT_HOST, MQTT_PORT);
   client.setCallback(receivedCallback);
   client.setBufferSize(512);
